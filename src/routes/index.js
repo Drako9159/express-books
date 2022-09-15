@@ -31,7 +31,8 @@ router.post("/new-entry", (req, res) => {
   books.push(newBook);
   fs.writeFileSync("src/books.json", JSON.stringify(books), "utf-8");
 
-  res.send("received");
+  /* res.send("received")*/
+  res.redirect("/");
 });
 router.get("/delete/:id", (req, res) => {
   books = books.filter((e) => e.id !== req.params.id);
