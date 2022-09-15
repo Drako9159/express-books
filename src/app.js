@@ -7,7 +7,7 @@ const morgan = require("morgan");
 
 //TODO Settings
 app.set("port", 5000);
-app.set("views", path.join(__dirname + "views"));
+app.set("views", path.join(__dirname + "/views"));
 app.set("view engine", "ejs");
 //TODO Middlewares
 app.use(morgan("dev"));
