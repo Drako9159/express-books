@@ -6,7 +6,7 @@ const morgan = require("morgan");
 //TODO __dirname es una variable global que contiene la ruta del directorio actual
 
 //TODO Settings
-app.set("port", 5000);
+app.set("port", 4000);
 app.set("views", path.join(__dirname + "/views"));
 app.set("view engine", "ejs");
 //TODO Middlewares
